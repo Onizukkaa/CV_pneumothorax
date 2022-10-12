@@ -42,13 +42,13 @@ tf.random.set_seed(10)
 
 
 #%%
-for dirname, _, filenames in os.walk('D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio'):
+for dirname, _, filenames in os.walk(''):
     print(dirname)
     
 #%%
 """ALL FILENAMES"""
 
-filenames = tf.io.gfile.glob("D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio/Data/*/*")
+filenames = tf.io.gfile.glob("/Data/*/*")
 print(len(filenames))
 print(filenames[:3])
 
