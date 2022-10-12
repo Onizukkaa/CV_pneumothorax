@@ -33,8 +33,8 @@ for gpu in gpus:
 #%%
 """Read in images, equalize histogram and save to working_dir/histo"""
 
-sdir = r"D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio/Data"
-working_dir = r"D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio"
+sdir = r"./Data"
+working_dir = r""
 clahe = cv2.createCLAHE(clipLimit = 2.0, tileGridSize = (8, 8))
 histpath = os.path.join(working_dir, "hist") #store equalized histogram images in this directory
 #%%
