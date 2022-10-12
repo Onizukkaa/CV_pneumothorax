@@ -307,9 +307,9 @@ cm = confusion_matrix(y_test, y_hat)
 sns.heatmap(cm, annot=True, cmap="Blues", fmt='.0f', cbar=False)
 
 #%%
-model.save('D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio/Models/Main_2')
+model.save('/Models/Main_2')
 #%%
-model = tf.keras.models.load_model("D:/programmation/Entrainement_perso/3_types_pneumo_ComputerVisio/Models/Main_2")
+model = tf.keras.models.load_model("/Models/Main_2")
 #%%
 model.summary()
 
